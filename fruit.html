@@ -1,0 +1,72 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fruit</title>
+  <link rel="stylesheet" href="css_dem0_fruit.css">
+  <script type="text/javascript" src="js_fruit.js"></script>
+</head>
+<body>
+<div id="div_container">
+  <div id="div_fruit_list">
+    <table id="tbl_fruit">
+      <tr>
+        <th>名称</th> <!--<th>表头   列-->
+        <th>单价</th>
+        <th>数量</th>
+        <th>小计</th>
+        <th>操作</th>
+      </tr>
+      <tr>
+        <td>苹果</td>
+        <td>5</td>
+        <td>20</td>
+        <td>100</td>
+        <td><img src="imgs/R-C.png" width="30" height="30"/></td>
+      </tr>
+      <tr>
+        <td>香蕉</td>
+        <td>5</td>
+        <td>20</td>
+        <td>177</td>
+        <td><img src="imgs/R-C.png" width="30" height="30"/></td>
+      </tr>
+      <tr>
+        <td>哈密瓜</td>
+        <td>5</td>
+        <td>20</td>
+        <td>233</td>
+        <td><img src="imgs/R-C.png" width="30" height="30"/></td>
+      </tr>
+      <tr>
+        <td>总计</td>
+        <td colspan="4">181</td> <!--colspan="4" 跨4列合并-->
+      </tr>
+    </table>
+    <hr/>
+    <div id="add_fruit_div">
+      <table id="add_fruit_Tbl">
+        <tr>
+          <td>名称：</td>
+          <td><input type="text" id="fname" value="apple"/></td>
+        </tr>
+        <tr>
+          <td>单价：</td>
+          <td><input type="text" id="price" value="6"/></td>
+        </tr>
+        <tr>
+          <td>数量：</td>
+          <td><input type="text" id="fcount" value="100"/></td>
+        </tr>
+        <tr>
+          <th colspan="2">
+            <input type="button"  id="addBtn"  value="添加" class="btn"/>
+            <input type="button" value="重填" class="btn"/>
+          </th>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+</body>
+</html>

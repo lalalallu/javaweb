@@ -1,0 +1,49 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>CSS03</title>
+    <link rel="stylesheet" href="css_dem0_fruit.css">
+    <script type="text/javascript" src="js_demo01.js"></script>
+  </head>
+  <body>
+    <div id="div_container">
+        <div id="div_fruit_list">
+          <table id="tbl_fruit">
+            <tr>
+              <th>名称</th> <!--<th>表头   列-->
+              <th>单价</th>
+              <th>数量</th>
+              <th>小计</th>
+              <th>操作</th>
+            </tr>
+            <tr onmouseover="showBGColor()" onmouseout="clearBGColor()">
+              <td>苹果</td>
+              <td onmouseover="showHand()">5</td>
+              <td>20</td>
+              <td>100</td>
+              <td><img src="imgs/R-C.png" width="30" height="30"/></td>
+            </tr>
+            <tr onmouseover="showBGColor()" onmouseout="clearBGColor()">
+              <td>香蕉</td>
+              <td onmouseover="showHand()">5</td>
+              <td>20</td>
+              <td>177</td>
+              <td><img src="imgs/R-C.png" width="30" height="30"/></td>
+            </tr>
+            <tr onmouseover="showBGColor()" onmouseout="clearBGColor()">
+              <td>哈密瓜</td>
+              <td onmouseover="showHand()">5</td>
+              <td>20</td>
+              <td>233</td>
+              <td><img src="imgs/R-C.png" width="30" height="30"/></td>
+            </tr>
+            <tr onmouseover="showBGColor()" onmouseout="clearBGColor()">
+              <td>总计</td>
+              <td colspan="4">181</td> <!--colspan="4" 跨4列合并-->
+            </tr>
+          </table>
+        </div>
+    </div>
+  </body>
+</html>

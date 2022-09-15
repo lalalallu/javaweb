@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <style>
+        #div1{
+            width: 400px;
+            height: 400px;
+            background: greenyellow;
+
+            /*边框样式*/
+            /*border: blue;*/
+            /*border-width: 5px;*/
+            /*border-style: solid;*/
+            border: 4px double blue;
+
+            /*border-top: 4px double blue;*/
+
+            /*圆角*/
+            border-radius: 30px;
+        }
+        #div2{
+            width: 150px;
+            height: 150px;
+            background: cadetblue;
+
+            margin-top: 100px;
+            margin-left: 100px;
+
+            padding-top: 50px; /*填充*/
+            padding-left: 50px;
+        }
+        #div3{
+            width: 100px;
+            height: 100px;
+            background: purple;
+
+            /*margin-top: 50px; !*间距*!*/
+            /*margin-left: 50px;*/
+        }
+        #div4{
+            width: 200px;
+            height: 50px;
+            background: greenyellow;
+
+            /*绝对定位*/
+            position: absolute;
+            left: 500px;
+            top: 500px;
+        }
+        #div5{
+            width: 200px;
+            height: 50px;
+            background: rosybrown;
+
+            /*相对定位*/
+            position: relative;
+            float: left;/*向左浮动*/
+            margin-left: 30px;
+        }
+        #div6{
+            /*height: 50px;*/
+            background: yellow;
+        }
+        #div7{
+            width: 200px;
+            height: 50px;
+            background: red;
+            float: left;
+        }
+        #div8{
+            width: 200px;
+            height: 50px;
+            background: rosybrown;
+            ;
+        }
+        div{
+            position: relative;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+      /*  display:inline_block -> a标签的行内块元素*/
+
+
+      </style>
+      <title>Css02</title>
+  </head>
+
+  <body>
+    <div id="div1">
+        <div id="div2">
+            <div id="div3">
+                &nbsp;
+            </div>
+        </div><!--空格-->
+    </div>
+    <hr/>
+    <div id="div4">&nbsp;</div>
+    <div id="div5">&nbsp;</div>
+    <div id="div6">
+        <div id="div7">&nbsp;</div>
+        <div id="div8">&nbsp;</div>
+    </div>
+  </body>
+</html>

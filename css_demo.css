@@ -1,0 +1,18 @@
+/*标签样式表*/
+p{color: aqua}
+
+/*类样式表*/
+.f20{font-size: 20px}
+
+/*ID样式表*/
+#p4{
+    background: brown;
+    font-size: 34px;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: "华文彩云";
+}
+/*组合样式*/
+div p{color: black}
+
+div .f32{font-size: 34px}
