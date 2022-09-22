@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title>用户注册界面</title>
+    <link type="text/css" href="css/register.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="banner">
+<div class="aside">
+    <form name="form1" action="doRegister.jsp" method="post" >
+        <div class="box">
+            <label class="i-label">*用户名</label>
+            <input type="text" name="username" class="i-text"/>
+        </div>
+        <div class="box">
+            <label class="i-label">*密&nbsp;&nbsp;&nbsp;&nbsp;码</label>
+            <input type="password" name="userpwd" class="i-text"/>
+        </div>
+        <div class="box">
+            <label class="i-label">*密码确认</label>
+            <input type="password" name="userpwd2" class="i-text"/>
+        </div>
+        <div class="box">
+            <label class="i-label">性&nbsp;&nbsp;&nbsp;&nbsp;别</label>
+            <span class="i-text">
+ <input type="radio" name="sex" checked>男
+ <input type="radio" name="sex">女
+ </span>
+        </div>
+        <div class="box">
+            <label class="i-label">出生年月</label>
+            <input type="date" name="birthday" class="i-text">
+        </div>
+        <div class="box">
+            <label class="i-label">*邮&nbsp;&nbsp;&nbsp;&nbsp;箱</label>
+            <input type="text" name="mail" class="i-text">
+        </div>
+        <div class="box">
+            <label class="i-label">职&nbsp;&nbsp;&nbsp;&nbsp;业</label>
+            <select name="work" size="1" class="i-text"  style="padding:4px;">
+                <option value="teacher">教师</option>
+                <option value="student" selected="selected">学生</option>
+            </select>
+        </div>
+        <div class="box">
+            <label class="i-label">个人爱好</label>
+            <span class="i-text" style="display:block;width:300px;">
+ <input type="checkbox" name="like" value="电脑网络" checked>电脑网络
+ <input type="checkbox" name="like" value="影视娱乐">影视娱乐
+ <input type="checkbox" name="like" value="棋牌娱乐">棋牌娱乐
+ </span>
+            <span class="i-text" style="display:block;width:300px;">
+ <input type="checkbox" name="like" value="读书读报">读书读报
+ <input type="checkbox" name="like" value="美酒佳肴">美酒佳肴
+ <input type="checkbox" name="like" value="绘画书法">绘画书法
+ </span>
+        </div>
+        <div class="box">
+            <label class="i-label">个人说明</label>
+            <textarea rows="8" cols="30" name="intro" class="i-text"></textarea>
+        </div>
+        <div class="box">
+ <span class="i-text">
+ <input type="submit" value="提 交">&nbsp;&nbsp;&nbsp;&nbsp;
+ <input type="reset" value="清 除">
+ </span>
+        </div>
+    </form>
+</div>
+</div>
+</body>
+</html>

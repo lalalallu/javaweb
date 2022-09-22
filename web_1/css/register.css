@@ -1,0 +1,39 @@
+@CHARSET "UTF-8";
+.box {
+    position:relative;
+    line-height:160%;
+    margin:6px;
+}
+.i-label{
+    position:absolute;
+    left:0px;
+    width:90px;
+    line-height:160%;
+    text-align:right;
+}
+.i-text{
+    position:relative;
+    left:95px;
+    width:200px;
+    line-height:160%;
+}
+.banner{
+    position:relative;
+    background:url(../edc7fcb0880411ebb6edd017c2d2eca2.jpg) no-repeat 0 200px;
+    margin:0 auto;
+    width:1000px;
+    height:678px;
+}
+.aside{
+    position:absolute;
+    left:60%;
+    top:120px;
+    width:400px;
+    padding:20px;
+    background:rgb(252, 252, 252);
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.3);
+    border-radius:8px;
+}
+body{
+    background:rgb(242, 242, 242);
+}

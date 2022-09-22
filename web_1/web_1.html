@@ -2,9 +2,117 @@
 <html lang = "en">
 <head>
     <meta charset = "UTF-8">
-    <title>WEB_1</title>
+    <title>叮当图书网</title>
+    <style>
+        * {
+            text-align:center;
+        }
+        header,footer,section {
+            margin:20px;
+        }
+        p{
+            text-align:left;
+            text-indent:2em;
+        }
+        table{
+            width: 95%;
+            border: 1px solid #c3dcf5; margin: 10px auto;
+            border-collapse: collapse;
+        }
+        caption {
+            color: #666;
+            font-size: 1.5em;
+        }
+        th {
+            color: #5591be; background: #ebf5ff; padding: 4px 14px;
+        }
+        td {
+            color: #678197;
+            border: 1px solid #c3dcf5; padding: 4px 14px;
+        }
+
+        tr:nth-of-type(even) { background-color: #f7fbff; }
+        tr:nth-of-type(odd) { background-color: #ebf5ff; }
+
+        .price {
+            color: #999;
+            text-decoration:line-through;
+        }
+        .bn {
+            display: block;
+            text-decoration:none;
+            width: 80px; height: 30px; line-height: 30px;
+            margin: 0 auto;
+            background: #C30;
+            color: #FFF;
+            border-radius: 5px;
+        }
+        .bn:hover { background: #FC0; color: #333;
+        }
+
+    </style>
 </head>
 <body>
+<header>
+    <img src="imgs/R-C.jpg" width="96" height="80">
+</header>
+<section>
+    <p>欢迎您来到叮当图书网，<a  href="register.html">[注册]</a>或者<a href="login.jsp">[登录]</a>成为我们的会员，然后就可以享受本站提供的各种会员服务。</p>
+</section> <section>
+    <table>
+        <caption> 图书热销榜 </caption>
+        <tr>
+            <th >名次</th>
+            <th >书名</th>
+            <th >作者</th>
+            <th >出版社</th>
+            <th >定价</th>
+            <th >叮当价</th>
+            <th ></th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>快乐的邮递员</td>
+            <td>[英] 艾伦·阿尔伯格 等著</td>
+            <td>北京联合出版公司</td>
+            <td class="price">¥215.00</td>
+            <td >¥215.00</td>
+            <td><a href="bookdetail.html" class="bn">去看看</a></td>
+        </tr>
+        <tr>
+
+            <td>2</td>
+            <td>债务危机</td>
+            <td>[美] 瑞·达利欧著 赵灿 熊建伟 刘波译</td>
+            <td>中信出版集团</td>
+            <td class="price">¥98.00</td>
+            <td >¥68.60</td>
+            <td><a href="#" class="bn">去看看</a></td>
+        </tr>
+        <tr>
+            <td >3</td>
+            <td>流浪的地球</td>
+            <td>刘慈欣 著</td>
+            <td>浙江教育出版社</td>
+            <td class="price">¥29.00</td>
+            <td >¥14.20</td>
+            <td><a href="#" class="bn">去看看</a></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>神奇的校车</td>
+            <td>(美)乔安娜柯尔 著</td>
+            <td >贵州人民出版社</td>
+            <td class="price">¥198.00</td>
+            <td >¥97.00</td>
+            <td><a href="#" class="bn">去看看</a></td>
+        </tr>
+    </table>
+</section>
+
+<footer>
+    叮当图书网(中国)有限公司 2019(C)版权所有
+</footer>
 
 </body>
 </html>
