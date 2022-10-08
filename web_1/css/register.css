@@ -17,9 +17,15 @@
     width:200px;
     line-height:160%;
 }
+.i-select{
+    position:relative;
+    left:95px;
+    width:100px;
+    line-height:160%;
+}
 .banner{
     position:relative;
-    background:url(../edc7fcb0880411ebb6edd017c2d2eca2.jpg) no-repeat 0 200px;
+    background:url(../theme-pic.jpg) no-repeat 0 200px;
     margin:0 auto;
     width:1000px;
     height:678px;
@@ -34,6 +40,27 @@
     box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.3);
     border-radius:8px;
 }
+
+.import_prompt{
+    border:solid 1px #ffcd00;
+    background-color:#ffffda;
+    padding-left:5px;
+    padding-right:5px;
+    line-height:20px;
+}
+.error_prompt{
+    border:solid 1px #ff3300;
+    background-color:#fff2e5;
+    background-image:url(../li_err.gif);
+    background-repeat:no-repeat;
+    background-position:5px 2px;
+    padding:2px 5px 0px 25px;
+    line-height:20px;
+}
+.ok_prompt{
+    display:none;
+}
+
 body{
     background:rgb(242, 242, 242);
 }

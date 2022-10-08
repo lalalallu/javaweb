@@ -4,15 +4,19 @@
     <meta charset = "UTF-8">
     <title>用户注册界面</title>
     <link type="text/css" href="css/register.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="js/register.js"></script>
+
 </head>
 <body>
 <div class="banner">
 <div class="aside">
-    <form name="form1" action="doRegister.jsp" method="post" >
+    <form name="form1" action="doRegister.html" method="post" onSubmit="return check(this)">
         <div class="box">
             <label class="i-label">*用户名</label>
-            <input type="text" name="username" class="i-text"/>
+            <input type="text" name="username" id="username" class="i-text" onfocus="usernameFocus()" onblur="usernameBlur()"/>
         </div>
+        <div id="usernameId"></div>
         <div class="box">
             <label class="i-label">*密&nbsp;&nbsp;&nbsp;&nbsp;码</label>
             <input type="password" name="userpwd" class="i-text"/>
@@ -35,6 +39,15 @@
         <div class="box">
             <label class="i-label">*邮&nbsp;&nbsp;&nbsp;&nbsp;箱</label>
             <input type="text" name="mail" class="i-text">
+        </div>
+        <div class="box">
+            <label class="i-label">现居住地</label>
+            <select name="selProvince" class="i-select" onchange="changeCity()">
+                <!--<option value="0" selected="selected">-选择省份-</option>-->
+            </select>
+            <select name="selCity" class="i-select">
+                <!--<option value="0" selected="selected">-选择城市-</option>-->
+            </select>
         </div>
         <div class="box">
             <label class="i-label">职&nbsp;&nbsp;&nbsp;&nbsp;业</label>
